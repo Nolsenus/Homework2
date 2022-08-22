@@ -1,6 +1,6 @@
 ﻿string MakeProgrammersString (int number) {
     string result = number + " программист";
-    if (number % 10 >= 5 || (number % 100 >= 10 && number % 100 <= 14)) {
+    if (number % 10 >= 5 || number % 10 == 0 || (number % 100 >= 10 && number % 100 <= 14)) {
         result += "ов";
     } else if (number % 10 > 1) {
         result += "а";
